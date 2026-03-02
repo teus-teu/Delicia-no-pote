@@ -1,0 +1,426 @@
+<div style="font-family: Arial, sans-serif; background:#0f0f0f; padding:30px; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.6); max-width:500px; margin:auto; color:#f5f5f5;">
+
+  <h1 style="text-align:center; color:#d4af37; letter-spacing:5px; font-size:40px;">
+    🍰 M.A.W 🍰
+  </h1>
+
+  <p style="text-align:center; color:#cfcfcf; font-size:14px;">
+    Mateus • Alex • William
+  </p>
+
+  <p style="text-align:center; font-weight:bold; color:#d4af37;">
+    Bolos de Pote Artesanais
+  </p>
+
+  <hr style="margin:25px 0; border:1px solid #d4af37;">
+
+  <h2 style="color:#d4af37;">🧁 Sabores Disponíveis</h2>
+
+  <p style="line-height:1.8;">
+    🍓 Morango <br>
+    🍪 Oreo <br>
+    🍫 Chocolate <br>
+    🍫 Nutella <br>
+    🥭 Maracujá <br>
+    🥥 Prestígio
+  </p>
+
+  <hr style="margin:25px 0; border:1px solid #d4af37;">
+
+  <h2 style="color:#d4af37;">💰 Preços</h2>
+
+  <p style="font-size:16px; line-height:1.8;">
+    1 Recheio — <strong style="color:#d4af37;">R$ 5,00</strong><br>
+    2 Recheios — <strong style="color:#d4af37;">R$ 7,00</strong><br>
+    3 Recheios — <strong style="color:#d4af37;">R$ 10,00</strong>
+  </p>
+
+  <hr style="margin:25px 0; border:1px solid #d4af37;">
+
+  <h3 style="color:#d4af37;">💳 Pagamento via PIX</h3>
+  <p>
+    <strong style="font-size:18px;">77981227642</strong>
+  </p>
+
+  <hr style="margin:25px 0; border:1px solid #d4af37;">
+
+  <p style="text-align:center; color:#cfcfcf;">
+    📲 Faça seu pedido agora<br>
+    🚚 Entregas na região
+  </p>
+
+</div>
+<div style="font-family: Arial, sans-serif; background:#0f0f0f; padding:30px; border-radius:20px; max-width:500px; margin:auto; color:#f5f5f5;">
+
+<h1 style="text-align:center; color:#d4af37; letter-spacing:5px;">🍰 M.A.W 🍰</h1>
+<p style="text-align:center; color:#cfcfcf;">Bolos de Pote Artesanais</p>
+
+<hr style="border:1px solid #d4af37; margin:20px 0;">
+
+<h2 style="color:#d4af37;">🧁 Escolha seu Pedido</h2>
+
+<label>Quantidade (1 Recheio - R$5):</label><br>
+<input type="number" id="q1" value="0" min="0" style="width:60px;"><br><br>
+
+<label>Quantidade (2 Recheios - R$7):</label><br>
+<input type="number" id="q2" value="0" min="0" style="width:60px;"><br><br>
+
+<label>Quantidade (3 Recheios - R$10):</label><br>
+<input type="number" id="q3" value="0" min="0" style="width:60px;"><br><br>
+
+<button onclick="calcularTotal()" style="background:#d4af37; border:none; padding:10px 20px; border-radius:10px; cursor:pointer;">
+Calcular Total
+</button>
+
+<h2 style="margin-top:20px;">💰 Total: R$ <span id="total">0.00</span></h2>
+
+<hr style="border:1px solid #d4af37; margin:20px 0;">
+
+<h3 style="color:#d4af37;">💳 PIX Copia e Cola</h3>
+<textarea readonly style="width:100%; height:100px;">
+00020126600014BR.GOV.BCB.PIX0114+55779812276420220obrigado pelo pedido5204000053039865802BR5924Mateus Araujo de Andrade6009SAO PAULO62140510orVattP6r46304385E
+</textarea>
+
+<p style="font-size:13px; color:#cfcfcf;">
+Após calcular, copie o valor total e faça o pagamento via PIX.
+</p>
+
+</div>
+
+<script>
+function calcularTotal() {
+  let q1 = parseInt(document.getElementById("q1").value) || 0;
+  let q2 = parseInt(document.getElementById("q2").value) || 0;
+  let q3 = parseInt(document.getElementById("q3").value) || 0;
+
+  let total = (q1 * 5) + (q2 * 7) + (q3 * 10);
+
+  document.getElementById("total").innerText = total.toFixed(2);
+}
+</script>
+<div style="font-family: Arial, sans-serif; background:#111; padding:30px; border-radius:20px; max-width:500px; margin:auto; color:#fff;">
+
+<h1 style="text-align:center; color:#d4af37; letter-spacing:4px;">
+M.A.W DELIVERY 🍰
+</h1>
+
+<p style="text-align:center; color:#ccc;">
+Bolos de Pote Artesanais
+</p>
+
+<hr style="border:1px solid #d4af37; margin:20px 0;">
+
+<h2 style="color:#d4af37;">🧁 Monte seu Pedido</h2>
+
+<label>1 Recheio — R$5</label><br>
+<input type="number" id="q1" value="0" min="0"><br><br>
+
+<label>2 Recheios — R$7</label><br>
+<input type="number" id="q2" value="0" min="0"><br><br>
+
+<label>3 Recheios — R$10</label><br>
+<input type="number" id="q3" value="0" min="0"><br><br>
+
+<button onclick="calcularTotal()" style="background:#d4af37; border:none; padding:10px 20px; border-radius:10px;">
+Calcular Total
+</button>
+
+<h2 style="margin-top:20px;">
+💰 Total: R$ <span id="total">0.00</span>
+</h2>
+
+<hr style="border:1px solid #d4af37; margin:20px 0;">
+
+<button onclick="pagarAgora()" style="background:#28a745; border:none; padding:12px 20px; border-radius:10px; color:white; font-weight:bold; width:100%;">
+💳 Pagar Agora
+</button>
+
+<br><br>
+
+<button onclick="enviarWhats()" style="background:#25D366; border:none; padding:12px 20px; border-radius:10px; color:white; font-weight:bold; width:100%;">
+📲 Enviar Pedido no WhatsApp
+</button>
+
+</div>
+
+<script>
+let totalFinal = 0;
+
+function calcularTotal() {
+  let q1 = parseInt(document.getElementById("q1").value) || 0;
+  let q2 = parseInt(document.getElementById("q2").value) || 0;
+  let q3 = parseInt(document.getElementById("q3").value) || 0;
+
+  totalFinal = (q1 * 5) + (q2 * 7) + (q3 * 10);
+
+  document.getElementById("total").innerText = totalFinal.toFixed(2);
+}
+
+function pagarAgora() {
+  if(totalFinal <= 0){
+    alert("Calcule o total primeiro!");
+    return;
+  }
+
+  // COLOQUE AQUI SEU LINK DE COBRANÇA DO NUBANK
+  let linkPagamento = "LINK_DO_NUBANK";
+
+  window.open(linkPagamento, "_blank");
+}
+
+function enviarWhats() {
+  if(totalFinal <= 0){
+    alert("Calcule o total primeiro!");
+    return;
+  }
+
+  let mensagem = `Olá! Quero fazer um pedido na M.A.W Delivery 🍰%0A
+Total: R$ ${totalFinal.toFixed(2)}%0A
+Já vou realizar o pagamento via<div style="font-family: Arial, sans-serif; background:#111; padding:30px; border-radius:20px; max-width:500px; margin:auto; color:#fff;">
+
+<h1 style="text-align:center; color:#d4af37; letter-spacing:4px;">
+M.A.W DELIVERY 🍰
+</h1>
+
+<p style="text-align:center; color:#ccc;">
+Bolos de Pote Artesanais
+</p>
+
+<hr style="border:1px solid #d4af37; margin:20px 0;">
+
+<h2 style="color:#d4af37;">🧁 Monte seu Pedido</h2>
+
+<label>1 Recheio — R$5</label><br>
+<input type="number" id="q1" value="0" min="0" style="width:60px;"><br><br>
+
+<label>2 Recheios — R$7</label><br>
+<input type="number" id="q2" value="0" min="0" style="width:60px;"><br><br>
+
+<label>3 Recheios — R$10</label><br>
+<input type="number" id="q3" value="0" min="0" style="width:60px;"><br><br>
+
+<button onclick="calcularTotal()" style="background:#d4af37; border:none; padding:10px 20px; border-radius:10px; cursor:pointer;">
+Calcular Total
+</button>
+
+<h2 style="margin-top:20px;">
+💰 Total: R$ <span id="total">0.00</span>
+</h2>
+
+<hr style="border:1px solid #d4af37; margin:20px 0;">
+
+<h3 style="color:#d4af37;">💳 Pagar via PIX</h3>
+
+<p>Chave PIX:</p>
+<input type="text" value="77981227642" id="pixKey" readonly style="width:100%; padding:5px;">
+
+<button onclick="copiarPix()" style="margin-top:10px; background:#d4af37; border:none; padding:8px 15px; border-radius:8px; cursor:pointer;">
+Copiar Chave PIX
+</button>
+
+<p style="margin-top:10px; font-size:14px; color:#ccc;">
+Use o valor mostrado acima no pagamento.
+</p>
+
+<hr style="border:1px solid #d4af37; margin:20px 0;">
+
+<button onclick="enviarWhats()" style="background:#25D366; border:none; padding:12px 20px; border-radius:10px; cursor:pointer; color:white; font-weight:bold; width:100%;">
+📲 Enviar Pedido no WhatsApp
+</button>
+
+</div>
+
+<script>
+function calcularTotal() {
+  let q1 = parseInt(document.getElementById("q1").value) || 0;
+  let q2 = parseInt(document.getElementById("q2").value) || 0;
+  let q3 = parseInt(document.getElementById("q3").value) || 0;
+
+  let total = (q1 * 5) + (q2 * 7) + (q3 * 10);
+  document.getElementById("total").innerText = total.toFixed(2);
+}
+
+function copiarPix() {
+  let pix = document.getElementById("pixKey");
+  pix.select();
+  document.execCommand("copy");
+  alert("Chave PIX copiada!");
+}
+
+function enviarWhats() {
+  let total = document.getElementById("total").innerText;
+
+  let mensagem = `Olá! Quero fazer um pedido na M.A.W Delivery 🍰%0A
+Total: R$ ${total}%0A
+Vou pagar via PIX.`;
+
+  window.open("https://wa.me/5577981227642?text=" + mensagem, "_blank");
+}
+</script>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M.A.W Delivery</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#111,#1c1c1c);
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+
+.container{
+  background:#1a1a1a;
+  padding:30px;
+  border-radius:20px;
+  width:90%;
+  max-width:450px;
+  box-shadow:0 0 25px rgba(212,175,55,0.3);
+}
+
+h1{
+  text-align:center;
+  color:#d4af37;
+  letter-spacing:4px;
+}
+
+h2{
+  color:#d4af37;
+}
+
+input{
+  width:60px;
+  padding:5px;
+  margin-top:5px;
+  border-radius:5px;
+  border:none;
+}
+
+button{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  font-weight:bold;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+.calc-btn{ background:#d4af37; }
+.whats-btn{ background:#25D366; color:white; }
+.pix-btn{ background:#444; color:white; }
+
+.total{
+  font-size:20px;
+  margin-top:15px;
+}
+
+.footer{
+  text-align:center;
+  margin-top:15px;
+  font-size:14px;
+  color:#ccc;
+}
+
+hr{
+  border:1px solid #333;
+  margin:20px 0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>M.A.W DELIVERY 🍰</h1>
+<p style="text-align:center;">Bolos de Pote Artesanais</p>
+
+<hr>
+
+<h2>🧁 Monte seu Pedido</h2>
+
+<p>1 Recheio — R$5</p>
+<input type="number" id="q1" value="0" min="0">
+
+<p>2 Recheios — R$7</p>
+<input type="number" id="q2" value="0" min="0">
+
+<p>3 Recheios — R$10</p>
+<input type="number" id="q3" value="0" min="0">
+
+<button class="calc-btn" onclick="calcularTotal()">Calcular Total</button>
+
+<div class="total">
+💰 Total: R$ <span id="total">0.00</span>
+</div>
+
+<hr>
+
+<h2>💳 Pagamento</h2>
+
+<p>Chave PIX:</p>
+<p style="background:#222;padding:10px;border-radius:8px;">
+77981227642
+</p>
+
+<button class="pix-btn" onclick="copiarPix()">Copiar Chave PIX</button>
+
+<hr>
+
+<button class="whats-btn" onclick="enviarWhats()">
+📲 Enviar Pedido no WhatsApp
+</button>
+
+<div class="footer">
+Mateus • Alex • William
+</div>
+
+</div>
+
+<script>
+
+let totalFinal = 0;
+
+function calcularTotal(){
+  let q1 = parseInt(document.getElementById("q1").value) || 0;
+  let q2 = parseInt(document.getElementById("q2").value) || 0;
+  let q3 = parseInt(document.getElementById("q3").value) || 0;
+
+  totalFinal = (q1*5) + (q2*7) + (q3*10);
+  document.getElementById("total").innerText = totalFinal.toFixed(2);
+}
+
+function copiarPix(){
+  navigator.clipboard.writeText("77981227642");
+  alert("Chave PIX copiada!");
+}
+
+function enviarWhats(){
+  if(totalFinal <= 0){
+    alert("Calcule o total primeiro!");
+    return;
+  }
+
+  let mensagem = `Olá! Quero fazer um pedido na M.A.W Delivery 🍰%0A
+1 Recheio: ${document.getElementById("q1").value}%0A
+2 Recheios: ${document.getElementById("q2").value}%0A
+3 Recheios: ${document.getElementById("q3").value}%0A
+Total: R$ ${totalFinal.toFixed(2)}%0A
+Vou pagar via PIX.`;
+
+  window.open("https://wa.me/5577981227642?text=" + mensagem,"_blank");
+}
+
+</script>
+
+</body>
+  </html>
+  
